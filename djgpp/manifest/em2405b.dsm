@@ -1,0 +1,62 @@
+#
+# DSM for GNU Emacs 24.5 binaries.
+# Written by Eli Zaretskii <eliz@gnu.org> 2015-04-11
+#
+
+dsm-file-version: 1.0
+dsm-name: em2405b.zip
+dsm-version: 0.6.1
+
+type: sources
+
+dsm-author: Eli Zaretskii
+dsm-author-email: eliz@gnu.org
+
+name: Emacs
+version: 24.5 release 1
+manifest: em2405b.mft
+sources-dsm: em2405s
+documentation-dsm: em2405b
+short-description: Binaries and docs for GNU Emacs version 24.5
+long-description: GNU Emacs is the extensible, customizable, self-documenting\n\
+real-time display editor.  Emacs is primarily targeted towards editing\n\
+program source code and program development in general.  It supports most\n\
+every programming language out there, and also a large set of human-spoken\n\
+languages and the corresponding written scripts.
+
+license: GNU GPL
+# Author.
+author: Richard Stallman
+author-email: rms@gnu.org
+# Current maintainer.
+maintainer: Stefan Monnier
+maintainer-email: monnier@iro.umontreal
+# maintainer reporting bugs
+mailing-list: bug-gnu-emacs@gnu.org
+# The home page of GNU Emacs.
+web-site:http://www.gnu.org/software/emacs
+# The ftp site of GNU grep.
+ftp-site:ftp://ftp.gnu.org/gnu/emacs
+# For discussing DJGPP- and DOS/Windows-specific aspects
+mailing-list: djgpp@delorie.com
+newsgroup: comp.os.msdos.djgpp
+
+porter: Eli Zaretskii
+porter-email: eliz@gnu.org
+
+simtelnet-path: v2gnu/
+zip: em2405b.zip
+changelog: gnu/emacs/ChangeLog
+
+pre-install-readme: gnu/emacs/etc/NEWS
+pre-install-readme: gnu/emacs/etc/PROBLEMS
+pre-install-readme: gnu/emacs/README
+pre-install-readme: gnu/emacs/msdos/INSTALL
+
+# These are required to run GNU Emacs:
+requires: DPMI 0.9
+requires: djdev >= 2.02
+
+replaces: emacs < 24.5 release 1
+
+depends-on: djdev >= 2.02
