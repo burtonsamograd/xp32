@@ -18,6 +18,8 @@ never developed to the ability that I've wished for.
 
 Maybe this paper will get written someday.
 
+TODO: make work with non DOS graphics.  Send drawing commands to stdout to be piped into a Common Lisp graphics terminal driver programing.  Use S-Expressions for the data format ie: (set-mode 320 240 t) ;; t is for palletized graphics.
+
 --
 Burton Samograd
 burton.samograd@gmail.com
